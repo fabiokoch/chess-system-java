@@ -5,8 +5,8 @@ import boardgame.Position;
 import chess.ChessPiece;
 import chess.Color;
 
-public class Knight extends ChessPiece{
-	
+public class Knight extends ChessPiece {
+
 	public Knight(Board board, Color color) {
 		super(board, color);
 	}
@@ -17,7 +17,7 @@ public class Knight extends ChessPiece{
 	}
 
 	private boolean canMove(Position position) {
-		ChessPiece p = (ChessPiece)getBoard().piece(position);
+		ChessPiece p = (ChessPiece) getBoard().piece(position);
 		return p == null || p.getColor() != getColor();
 	}
 
